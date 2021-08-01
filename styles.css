@@ -47,7 +47,7 @@ body {
     margin-bottom: 1.6rem;
 }
 
-.preview-card-section > h1 {
+.preview-card-section > h2 {
     color: var(--color-very-light-gray);
     font-size: 2.4rem;
     margin-bottom: 1.6rem;
