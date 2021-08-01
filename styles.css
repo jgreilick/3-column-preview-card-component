@@ -1,0 +1,136 @@
+:root {
+    --font-lexend-deca: 'Lexend Deca', sans-serif;
+    --font-big-shoulders: 'Big Shoulders Display', cursive;
+    --color-bright-orange: hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+    --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --color-very-light-gray: hsl(0, 0%, 95%);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-big-shoulders);
+    font-size: 15px;
+}
+
+.container {
+    background-color: var(--color-very-light-gray);
+    display: grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 1rem;
+    place-content: center;
+}
+
+/* Preview card rules */
+
+.preview-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 325px;
+}
+
+.preview-card-section {
+    padding: 2.4rem 2.8rem;
+}
+
+.preview-card-section > p {
+    color: var(--color-transparent-white);
+    font-family: var(--font-lexend-deca);
+    line-height: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.preview-card-section > h1 {
+    color: var(--color-very-light-gray);
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+.preview-card-section > button {
+    background-color: var(--color-very-light-gray);
+    border-style: none;
+    border-radius: 2rem;
+    font-family: var(--font-lexend-deca);
+    padding: 0.9rem 2.5rem;
+}
+
+.preview-card-icon {
+    margin-bottom: 1.6rem;
+}
+
+.luxury-section {
+    background-color: var(--color-very-dark-cyan);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.luxury-section > button {
+    color: var(--color-very-dark-cyan);
+}
+
+.sedans-section {
+    background-color: var(--color-bright-orange);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.sedans-section > button {
+    color: var(--color-bright-orange);
+}
+
+.suvs-section {
+    background-color: var(--color-dark-cyan);
+}
+
+.suvs-section > button {
+    color: var(--color-dark-cyan);
+}
+
+@media screen and (min-width: 920px) {
+    .preview-card {
+        flex-direction: row;
+        max-width: 920px;
+    }
+
+    .preview-card-section {
+        padding: 2.9rem 3.1rem;
+    }
+
+    .preview-card-section > p {
+        line-height: 1.6rem;
+        margin-bottom: 5.1rem;
+    }
+
+    .preview-card-section > button {
+        font-size: 1em;
+        padding: 0.9rem 2rem;
+    }
+
+    .preview-card-section > button:hover {
+        background-color: inherit;
+        border: var(--color-very-light-gray) solid 0.15rem;
+        color: var(--color-very-light-gray);
+        cursor: pointer;
+        padding: 0.75rem 2rem;
+    }
+
+    .preview-card-icon {
+        margin-bottom: 2rem;
+    }
+
+    .luxury-section {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .sedans-section {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+}
+
