@@ -34,10 +34,12 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 325px;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .preview-card-section {
-    padding: 2.4rem 2.8rem;
+    padding: 3rem;
 }
 
 .preview-card-section > p {
@@ -68,8 +70,6 @@ body {
 
 .luxury-section {
     background-color: var(--color-very-dark-cyan);
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
 }
 
 .luxury-section > button {
@@ -78,7 +78,6 @@ body {
 
 .sedans-section {
     background-color: var(--color-bright-orange);
-    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .sedans-section > button {
@@ -123,14 +122,6 @@ body {
 
     .preview-card-icon {
         margin-bottom: 2rem;
-    }
-
-    .luxury-section {
-        border-radius: 0 0.5rem 0.5rem 0;
-    }
-
-    .sedans-section {
-        border-radius: 0.5rem 0 0 0.5rem;
     }
 }
 

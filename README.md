@@ -64,3 +64,5 @@ I have several more "Newbie" challenges to complete from Frontend Mentor.  I pla
 ## Acknowledgments
 
 - Thank you Frontend Mentor for the amazing platform and community!
+
+- [@Liltanie](https://www.frontendmentor.io/profile/Liltanie) - Helped improve my CSS with some helpful suggestions for efficient code.
